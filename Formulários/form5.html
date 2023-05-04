@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=h1, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Exemplo de formulário</h1>
+
+    <form action="cadastro.php" method="get" autocomplete="on">
+        <fieldset>
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexom"> <label for="sexom">Masculino</label>
+
+            <input type="radio" name="sexo" id="sexof"> <label for="sexof">Feminino</label>
+
+            <!--TODAS AS BOLINHAS DE RADIO PRECISAM TER O MESMO >>>NAME<<< O ID PRECISA SER DIFERENTE--> 
+
+        </fieldset>
+
+        <fieldset>
+            <legend>Esportes Favoritos</legend>
+            <input type="checkbox" name="basquete" id="basquete"><label for="basquete">Basquete</label>
+
+            <input type="checkbox" name="futebol" id="futebol"><label for="futebol">Futebol</label>
+
+            <input type="checkbox" name="natacao" id="natacao">Natação
+
+            <input type="checkbox" name="tenis" id="tenis">Tênis
+        </fieldset>
+        
+        <p>
+            <input type="submit" value="Enviar">
+            <input type="reset" value="limpar">
+        </p>
+
+    </form>
+</body>
+</html>
