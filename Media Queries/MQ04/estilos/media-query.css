@@ -1,0 +1,116 @@
+@charset "UTF-8";
+
+/*TODAS AS MIDIAS 
+
+TYPICAL DEVICE BREAKPOINTS
+PEQUENAS TELAS: ATÉ 600PX
+CELULAR: 600PX - 768PX
+TABLET: 768PX - 992PX
+DESKTOP: 992PX - 1200PX
+GRANDES TELAS: >>1200PX
+
+*/
+
+@media print {
+
+    body {
+    background-image: url(../../imagens/back-print.jpg);
+    }
+
+    * {
+    font-family: 'Courier New', Courier, monospace;
+    }
+
+    main {
+        border: 2px solid black;
+        width: 90vw;
+    }
+
+    main h1 {
+        text-shadow: none;
+        color: black;
+    }
+
+    main::after {
+     content: 'Essa impressão foi feita pelo site www.xxxxxxx.com';
+     text-decoration: overline;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 992px) {
+ 
+    body {
+    background-image: url(../../imagens/back-tablet.jpg);
+}
+img#phone {
+    display: none;
+    }
+    
+    img#tablet {
+    display: block;
+    }
+    
+    img#impressora {
+        display: none;
+        }
+    
+    img#notbook {
+            display: none;
+       }
+    
+    img#tv {
+        display: none;
+        }   
+}
+
+@media screen and (min-width: 992px) and (max-width: 1200px) {
+    body {
+    background-image: url(../../imagens/back-pc.jpg);
+}
+
+img#phone {
+    display: none;
+    }
+    
+    img#tablet {
+    display: none;
+    }
+    
+    img#impressora {
+        display: none;
+        }
+    
+    img#notbook {
+            display: block;
+       }
+    
+    img#tv {
+        display: none;
+        } 
+    
+}
+
+@media screen and (min-width: 1200px) {
+    body {
+    background-image: url(../../imagens/back-tv.jpg);
+}
+img#phone {
+    display: none;
+    }
+    
+    img#tablet {
+    display: none;
+    }
+    
+    img#impressora {
+        display: none;
+        }
+    
+    img#notbook {
+            display: none;
+       }
+    
+    img#tv {
+        display: block;
+        } 
+}
